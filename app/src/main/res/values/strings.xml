@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">무장애 여행 어플_모두랑✈</string>
+
+    <string name="drawer_opened">Opened Drawer</string>
+    <string name="drawer_closed">Closed Drawer</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" templateMergeStripPrefix="false" translatable="false">AIzaSyAH2YQNX2lQdpDdBTjyXvngQLZT0mSY5nQ</string>
+
+
+    <string name="default_client_id">755608269916-r807a0nr80f96ikmcd36tu8j16416igh.apps.googleusercontent.com</string>
+    // clinet 키
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

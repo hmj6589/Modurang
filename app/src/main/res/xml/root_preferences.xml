@@ -1,0 +1,83 @@
+<!--
+레이아웃 -> 리니어,, 랑 달라
+
+키 : id와 같은 역할
+title : 출력
+
+useSimpleSummaryProvider : 입력된 값에 따라서 자동으로 앞에 보여주겠다는 뜻
+
+
+
+listpreference : 쭉 나열
+-> array  이용
+(values 파일의 arrays.xml 이용)
+
+entries : 화면에 보여지는 값
+entryValues : 선택시 넘겨지는 값
+
+SwitchPreferenceCompat : 트루/펄스 넘기기
+
+summaryOff/summaryOn : 스위치 바뀔 때마다 화면에 보여지는 값 바꾸기
+
+
+PreferenceCategory : 그룹으로 묶은 것 (그룹 역할을 함)
+
+** 우리가 만들어둔 이 화면하고 행동 연결해줘야해 **
+
+-->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="화면 설정">
+
+        <ListPreference
+            app:defaultValue="#00ff00"
+            app:entries="@array/my_color"
+            app:entryValues="@array/my_color_values"
+            app:key="color"
+            app:title="검색 버튼 배경 색상 선택"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="16.0f"
+            app:entries="@array/my_size"
+            app:entryValues="@array/my_size_values"
+            app:key="size"
+            app:title="검색창 글씨 크기 선택"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="text_style"
+            app:title="글씨 스타일"
+            app:entries="@array/text_style_entries"
+            app:entryValues="@array/text_style_values"
+            app:defaultValue="normal"
+            app:summary="검색창 글씨 스타일 선택" />
+
+        <ListPreference
+            app:key="user_image"
+            app:title="사용자 이미지"
+            app:entries="@array/image_names"
+            app:entryValues="@array/image_ids"
+            app:defaultValue="pororo"
+            app:summary="사용자 이미지를 선택하세요"
+            app:dialogTitle="사용자 이미지 선택" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

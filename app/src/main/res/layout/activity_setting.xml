@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    class="com.example.projectapplication.MySettingsFragment" >
+
+
+
+
+</fragment>
+
+
+
+<!--마이세팅프래그먼트 만들어둔 거 연결해주는 역할-->
+<!--루트프리프ㄹ네ㅔㅔ스 연결-->
+
+<!--세팅 화면 만들고 액티비티에 담는 것까지 됏져-->

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#536DFE"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="무장애 여행지 추천하기"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:text="작성자 ID"
+        android:textStyle="bold"/>
+    <!--    로그인한 사용자의 아이디 출력-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+    <!--    RatingBar 위젯 -> 별표-->
+
+    <!--    android:layout_width="wrap_content" 요거를 match_parent로 해두면 별표 부분이 제어가 안됨 주의!!-->
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="16dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="start|top"
+        android:hint="내용"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadButton"
+        android:text="이미지 불러오기"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/addImageView"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="50dp" />
+
+    <!--    저장하기 눌렀을 때 별표, 내용 -> 파이어스토어 쪽에 내용 넘겨져야함-->
+
+</LinearLayout>
+
+    <!--우리가 입력할 내용을 추가하는 부분-->

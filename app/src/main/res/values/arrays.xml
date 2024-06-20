@@ -1,0 +1,56 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="my_color">
+        <item>연한 하늘색</item>
+        <item>민트색</item>
+        <item>진한 하늘색</item>
+    </string-array>
+
+    <string-array name="my_color_values">
+        <item>#00FFFF</item>
+        <item>#DCFFF8</item>
+        <item>#00BFFF</item>
+    </string-array>
+
+    <string-array name="my_size">
+        <item>작게</item>
+        <item>중간</item>
+        <item>크게</item>
+    </string-array>
+
+    <string-array name="my_size_values">
+        <item>18.0f</item>
+        <item>20.0f</item>
+        <item>23.0f</item>
+    </string-array>
+
+    <string-array name="text_style_entries">
+        <item>기본</item>
+        <item>볼드</item>
+        <item>이탤릭</item>
+    </string-array>
+    <string-array name="text_style_values">
+        <item>normal</item>
+        <item>bold</item>
+        <item>italic</item>
+    </string-array>
+
+    <string-array name="image_names">
+        <item>pororo</item>
+        <item>eddy</item>
+        <item>loppy</item>
+    </string-array>
+
+    <string-array name="image_ids">
+        <item>pororo</item>
+        <item>eddy</item>
+        <item>loppy</item>
+    </string-array>
+
+</resources>
+
+
+<!-- -> 화면에 보여지는 리스트-->
+
+<!-- -> 화면 선택했을 때 전달해주는 값-->
+<!--따로 지정-->

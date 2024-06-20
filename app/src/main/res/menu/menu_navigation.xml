@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+
+    <item
+        android:id="@+id/my_page"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="마이 페이지"/>
+
+    <item
+        android:id="@+id/item_board"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="무장애 여행지 추천 게시판"/>
+
+
+    <item
+        android:id="@+id/item_video"
+        android:icon="@android:drawable/presence_video_away"
+        android:title="무장애 여행 영상"/>
+
+
+    <item
+        android:id="@+id/map"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="지도 보기"/>
+
+    <item
+        android:id="@+id/todo"
+        android:icon="@drawable/check"
+        android:title="ToDoList"/>
+
+
+    <item
+        android:id="@+id/item_setting"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="설정"/>
+
+</menu>
